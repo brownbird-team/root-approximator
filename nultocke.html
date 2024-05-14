@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>limun</title>
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <link rel="stylesheet" href="nultocke.css">
-
 </head>
 <body>
-    <div>
-    <label for="funkcija">Funkcija</label>
-    <input type="text" id=funkcija>
-    <p id="f_out"></p>
-    <label for="derivacija">Derivacija(Ostaviti prazno za automatsku kalkulaciju)</label>
-    <input type="text" id=derivacija>
-    <p id="d_out"></p>
-    <label for="guess">Početna vrijednost</label>
-    <input type="text" id=guess><br>
-    <label for="prec">Preciznost</label>
-    <input type="text" id="prec" value="0.0000001"><br>
-    <button id="racun">Izračunaj nultočku</button>
-    
-    <p id="ispis"></p>
-</div>
+    <h1>ROOT APPROXIMATOR 10000</h1>
+    <div class="container">
+        <div class="dijelovi">
+            <label for="funkcija">Funkcija</label>
+            <input type="text" id=funkcija placeholder="x^2 - 5">
+            <p id="f_out"></p>
+        </div>
+        <div class="dijelovi">
+            <label for="derivacija">Derivacija (ostaviti prazno za automatsku kalkulaciju)</label>
+            <input type="text" id=derivacija>
+            <p id="d_out"></p>
+        </div>
+        <div class="dijelovi">
+            <label for="guess">Početna vrijednost</label>
+            <input type="text" id=guess><br>
+            <p></p>
+        </div>
+        <div class="dijelovi">
+            <label for="prec">Preciznost</label>
+            <input type="text" id="prec" value="0.0000001"><br>
+            <p></p>
+        </div>
+        <button id="racun">Izračunaj nultočku</button>        
+        <p id="ispis"></p>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/evaluatex/dist/evaluatex.min.js"></script>
 
