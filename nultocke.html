@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <link rel="stylesheet" href="nultocke.css">
+
+</head>
+<body>
+    <div>
+    <label for="funkcija">Funkcija</label>
+    <input type="text" id=funkcija>
+    <p id="f_out"></p>
+    <label for="derivacija">Derivacija(Ostaviti prazno za automatsku kalkulaciju)</label>
+    <input type="text" id=derivacija>
+    <p id="d_out"></p>
+    <label for="guess">Početna vrijednost</label>
+    <input type="text" id=guess><br>
+    <label for="prec">Preciznost</label>
+    <input type="text" id="prec" value="0.0000001"><br>
+    <button id="racun">Izračunaj nultočku</button>
+    
+    <p id="ispis"></p>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/evaluatex/dist/evaluatex.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+
+<script src="nultocke.js"></script>
+</html>
